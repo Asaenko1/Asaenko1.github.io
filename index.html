@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Noto+Sans&family=Plus+Jakarta+Sans&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="header__container">
+				<div class="header__content">
+					<div class="header__main">
+						<img src="img/header/03.png" alt="Name-logo">
+						<div class="header__name">
+							<h2><span>A</span>NDREW<br><span>S</span>AENKO</h2>	
+						</div>
+					</div>
+					<div class="header__logo">
+						<img src="img/header/logo.svg" alt="logo">
+					</div>
+					<div class="header__burger">
+						<div class="burger-menu">
+								<div class="burger-click-region" onclick="haminate()">
+								<span class="burger-menu-piece top"></span>
+								<span class="burger-menu-piece middle"></span>
+								<span class="burger-menu-piece bottom"></span>
+							</div>
+						</div>
+
+						<div class="sidebar">
+							 <div class="sidemenu">
+								 <li class="sidetext"><a class="nav" href="index.html">Главная</a></li>
+								 <li class="sidetext"><a class="nav" href="html/portfolio.html">Портфолио</a></li>
+								 <li class="sidetext"><a class="nav" href="html/contact.html">Контакты</a></li>
+							 </div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</header>
+		<main>
+			<div class="page__main">
+				<div class="main__background">
+					<div class="main__container">
+						<div class="intro" id="intro">
+							<h1 class="text" id="text">
+								Hello,i'm <span class="first__span">Andrew Saenko</span>,<br>i'm a <span class="second__span">Front-end developer</span>.
+							</h1>
+							<div class="line-block">
+	 	 						<div class="underline" id="underline"></div>
+	  						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__body">
+				<div class="body__container">
+					<div class="body__content">
+						<div class="body__image" data-aos="fade-right">
+							<img src="img/body/02.png" alt="logo">
+						</div>
+						<div class="body__item">
+							<div class="body__title" data-aos="fade-left">
+								<h3 class="text__title">Приветствую</h3>
+								<div class="line__block">
+									<div class="line"></div>
+								</div>
+							</div>
+							<div class="body__text" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+								<p class="text-first">
+									Доброго времени суток! Меня зовут Андрей.  Я занимаюсь разработкой сайтов с нуля, а так же версткой. Делаю адаптивную и качественную верстку, таким образом ваш сайт будет отлично выглядеть на всех устройствах.
+								</p>
+								<p class="text-second">
+									А так же,готов поддерживать сайт после
+									сдачи проекта.
+								</p>
+							</div>	
+							<form action="html/contact.html" target="link" class="form-button__body" data-aos="flip-up">
+								<button class="neon-button neon-button-blue">Контакты</button>
+							</form>		
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__skills">
+				<div class="skills__container">
+					<div class="skills__content">
+						<div class="skills__left-block">
+							<div class="skills-left__title" data-aos="fade-right">
+								<h2 class="skills__title">Мои Навыки</h2>
+								<div class="skills__line"></div>
+							</div>
+							<ul class="skills__list" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+								<li class="list__item">
+									<img src="img/skill/01.svg" alt="icon">
+									<p class="skills">Адаптивная, кроссбраузерная верстка сайтов.</p>
+								</li>
+								<li class="list__item">
+									<img src="img/skill/01.svg" alt="icon">
+									<p class="skills">Язык разметки HTML + Таблицы стилей CSS.</p>
+								</li>
+								<li class="list__item">
+									<img src="img/skill/01.svg" alt="icon">
+									<p class="skills">Препроцессоры CSS.</p>
+								</li>
+								<li class="list__item">
+									<img src="img/skill/01.svg" alt="icon">
+									<p class="skills">Фреймворк Bootstrap 4/5.</p>
+								</li>
+								<li class="list__item">
+									<img src="img/skill/01.svg" alt="icon">
+									<p class="skills">Язык программирования JavaScript + Библиотека jQuery.</p>
+								</li>
+								<li class="list__item">
+									<img src="img/skill/01.svg" alt="icon">
+									<p class="skills">Графические редакторы Figma + Adobe Photoshop.</p>
+								</li>
+							</ul>
+							<div class="skills-left__sub-title" data-aos="fade-right">
+								<h4 class="skills__sub-title">А так же...</h4>
+								<div class="skills__sub-line"></div>
+							</div>
+							<ul class="skills__sub-list" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"data-aos-delay="300" data-aos-offset="0">
+								<li class="list__item">
+									<img src="img/skill/01.svg" alt="icon">
+									<p class="skills">Правки и доработки готового сайта.</p>
+								</li>
+								<li class="list__item">
+									<img src="img/skill/01.svg" alt="icon">
+									<p class="skills">Разработка: сайт-визитка,блог,интернет-магазин<br>
+										Landing-page, мобильные сайты, опросники.
+									</p>
+								</li>
+							</ul>
+						</div>
+
+
+						<div class="skills__right-block">							
+							<div class="skills__adapt" data-aos="fade-down-right">
+								<div class="adapt__image">
+									<img src="img/skill/02.svg" alt="">
+								</div>
+								<p class="adapt__text">АДАПТАЦИЯ</p>
+							</div>
+							<div class="skills__adapt" data-aos="fade-down-left">
+								<div class="adapt__image">
+									<img src="img/skill/03.svg" alt="">
+								</div>
+								<p class="adapt__text">ОПТИМИЗАЦИЯ</p>
+							</div>
+							<div class="skills__adapt" data-aos="fade-up-right">
+								<img src="img/skill/04.svg" alt="">
+								<p class="adapt__text">КРАСИВЫЙ КОД</p>
+							</div>
+							<div class="skills__adapt" data-aos="fade-up-left">
+								<img src="img/skill/05.svg" alt="">
+								<p class="adapt__text">УДОБНЫЙ В ИСПОЛЬЗОВАНИИ</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__portfolio">
+				<div class="portfolio__container">
+					<h2 class="portfolio__title" data-aos="fade-left">Последние работы</h2>
+					<div class="portfolio__title-block" data-aos="fade-left">
+						<div class="portfolio__line"></div>
+					</div>
+					<div class="portfolio__content" data-aos="fade-right">
+						<div class="portfolio__projects">
+							<img src="img/portfolio/01.png" alt="" class="blur">
+						</div>
+						<div class="portfolio__projects">
+							<img src="img/portfolio/02.png" alt="" class="blur">
+						</div>
+						<div class="portfolio__projects-second">
+							<img src="img/portfolio/03.png" alt="" class="blur">
+						</div>
+						<a href="#" class="portfolio__projects-second">
+							<img src="img/portfolio/04.png" alt="" class="blur">
+						</a>
+					</div>
+					<form action="html/portfolio.html" target="link" class="form-button" data-aos="flip-up">
+						<button class="neon-button neon-button-blue">Все работы</button>
+					</form>
+				</div>
+
+			</div>
+		</main>
+		<footer>
+			<div class="footer__container">
+				<p class="footer-cop">Copyright © 2022 by Andrew Saenko</p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/burger.js"></script>
+	<script src="js/underline.js"></script>
+
+</body>
+</html>
