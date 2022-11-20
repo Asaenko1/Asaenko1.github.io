@@ -42,6 +42,13 @@
  header{
     background: #FFF;
  }
+ .header{
+    position: fixed;
+    width: 100%;
+    opacity: 1;
+    color: #fff;
+    z-index: 3;
+ }
  .header__container{
 
  }
@@ -55,7 +62,7 @@
     align-items: center;
  }
  .header__logo{
-    display: block;
+    
  }
  .header__name h2{
     color: #646464;
@@ -69,62 +76,69 @@
     color: #008162;
  }
  /*burger*/
-.burger-menu {
-  position: relative;
-  height: 30px;
-  margin: 0px 30px 0px 70px;
-  color: #60635E;
-  text-transform: uppercase;
-  z-index: 50;
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    opacity: 0.8;
+    background-color: #999;
+    width: 100%;
+    height: 100%;  
+    transition: 0.7s;
+    justify-content: center;
 }
 
-.burger-click-region {
-  position: absolute;
-  right: 0;
-  width: 40px;
-  height: 30px;
-  cursor: pointer;
+.nav-item{
+    margin: 0px 0px 40px 80px;
+    transition: 0.9s;
 }
-
-.burger-menu-piece {
-  display: block;
-  position: relative;
-  width: 40px;
-  border-top: 6px solid #00B488;
-  transform-origin: 50% 50%;
-  margin-top: 5px;
+.nav-menu.active{
+    left: 0;
 }
-
-.sidebar {
-  background: #fff;
-  opacity: 0.85;
-  width: 30%;
-  margin-top: 21px;
-  margin-left: -127%;
-  height: 88%;
-  position: absolute;
+.nav-branding{
+    font-size: 2rem;
 }
-
-
-.sidebar li {
-  font-family: sans-serif;
-  list-style-type: none;
-  font-size: 3.7vw;
-  margin-bottom: 120px;
-  text-align:left;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  min-width: 100%;
+.nav-link{
+    font-size: 47px;
+    line-height: 125%;
+    font-weight: 700;
+    color: #000;
+    transition: 0.7s ease;
 }
-
-.sidemenu {
-  margin: 90px 0 0 60px;
+.nav-link:hover{
+    
 }
-.nav{
-  color: #333;
+.hamburger{
+    display: block;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #913;
 }
 
 /*----MAIN----*/
@@ -487,47 +501,12 @@ footer{
     line-height: 19px;
 }
 /*--Adaptation--*/
-@media (max-width: 1440px){
-    .sidebar {
-        background: #fff;
-        opacity: 0.85;
-        width: 30%;
-        margin-top: 21px;
-        margin-left: -131%;
-        height: 75%;
-        position: absolute;
-    }
-}
-
-@media (max-width: 1400px){
-    .sidebar {
-        background: #fff;
-        opacity: 0.85;
-        width: 30%;
-        margin-top: 21px;
-        margin-left: -131%;
-        height: 81%;
-        position: absolute;
-    }
-}
 
 
 @media (max-width: 1100px){
 
 }
 @media (max-width: 1024px){
-     .sidebar {
-        background: #fff;
-        opacity: 0.85;
-        width: 30%;
-        margin-top: 21px;
-        margin-left: -143%;
-        height: 71%;
-        position: absolute;
-    }
-    .sidebar li{
-        margin-bottom: 90px
-    }
     .text{
         font-size: 60px
     }
@@ -565,18 +544,6 @@ footer{
      }
 }     
 @media (max-width: 768px){
-    .sidebar {
-        background: #fff;
-        opacity: 0.85;
-        width: 33%;
-        margin-top: 21px;
-        margin-left: -157%;
-        height: 67.5%;
-        position: absolute;
-    }
-    .sidebar li{
-        margin-bottom: 90px
-    }
     .main__container{
         padding: 170px 0px 90px 0px;
     }
@@ -669,21 +636,8 @@ footer{
     .header__logo{
         display: none;
     }
-    .sidebar {
-        background: #fff;
-        opacity: 0.85;
-        width: 100%;
-        margin-top: 21px;
-        margin-left: -202%;
-        height: 45%;
-        position: absolute;
-    }
-    .sidemenu{
-        margin: 60px 0px 0px 170px;
-    }
-    .sidebar li{
-        margin-bottom: 50px;
-        font-size: 20px;
+    .nav-item{
+        margin: 40px 0px 40px 0px;
     }
     .text{
         font-size: 28px;
