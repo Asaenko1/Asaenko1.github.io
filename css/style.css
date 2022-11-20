@@ -138,7 +138,7 @@
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #913;
+    background-color: #008162;
 }
 
 /*----MAIN----*/
@@ -146,12 +146,12 @@
       
 }
 .main__background{
-    background: url('../img/main/01.png');
+    background: url('../img/main/01.webp');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .main__container{
-    padding: 260px 0px 150px 0px;
+    padding: 260px 0px 200px 0px;
 }
 .intro{
 
@@ -647,7 +647,7 @@ footer{
         padding-top: 25px;
     }
     .main__container{
-        padding: 120px 0px 90px 0px;
+        padding: 200px 0px 150px 0px;
     }
     .skills__content{
         display: block;
@@ -662,7 +662,7 @@ footer{
         display: none;
     }
     .page__body{
-        background: url('../img/body/03.png');
+        background: url('../img/body/03.webp');
         background-size: cover;
         background-repeat: no-repeat;
     }
