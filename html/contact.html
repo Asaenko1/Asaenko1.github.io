@@ -6,38 +6,41 @@
 	<link rel="stylesheet" href="../css/contact.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Noto+Sans&family=Plus+Jakarta+Sans&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<title>Document</title>
+	<title>Контакты</title>
 </head>
 <body>
 	<div class="wrapper">
-		<header>
+		<header class="header">
 			<div class="header__container">
 				<div class="header__content">
 					<div class="header__main">
-						<img src="../img/header/03.png" alt="Name-logo">
+						<a href="../index.html" class="main-page"><img src="../img/header/03.png" alt="Name-logo"></a>
 						<div class="header__name">
 							<h2><span>A</span>NDREW<br><span>S</span>AENKO</h2>	
 						</div>
 					</div>
 					<div class="header__logo">
-						<img src="../img/header/logo.svg" alt="logo">
+						<a href="../index.html" class="main-page"><img src="../img/header/logo.svg" alt="logo"></a>
 					</div>
 					<div class="header__burger">
-						<div class="burger-menu">
-								<div class="burger-click-region" onclick="haminate()">
-								<span class="burger-menu-piece top"></span>
-								<span class="burger-menu-piece middle"></span>
-								<span class="burger-menu-piece bottom"></span>
+						<nav class="navbar">
+							<ul class="nav-menu">
+								<li class="nav-item">
+									<a href="../index.html" class="nav-link hvr-sweep-to-right">Главная</a>
+								</li>
+								<li class="nav-item hvr-sweep-to-left">
+									<a href="portfolio.html" class="nav-link">Портфолио</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link hvr-sweep-to-right">Контакты</a>
+								</li>
+							</ul>
+							<div class="hamburger">
+								<span class="bar"></span>
+								<span class="bar"></span>
+								<span class="bar"></span>
 							</div>
-						</div>
-
-						<div class="sidebar">
-							 <div class="sidemenu">
-								 <li class="sidetext"><a href="../index.html" class="link">Главная</a></li>
-								 <li class="sidetext"><a href="portfolio.html" class="link">Портфолио</a></li>
-								 <li class="sidetext"><a href="contact.html" class="link">Контакты</a></li>
-							 </div>
-						</div>
+						</nav>
 					</div>
 				</div>
 			</div>		
@@ -59,7 +62,7 @@
 			</div>
 			<div class="page__contact">
 				<div class="contact__container">
-					<div class="contact__title">
+					<div class="contact__title" data-aos="fade-right">
 						<div class="text__title">
 							Связатся со мной
 						</div>
@@ -68,25 +71,32 @@
 						</div>
 					</div>
 					<div class="contact__content">
-						<div class="contact__sources">
+						<div class="contact__sources" data-aos="fade-right">
 							<div class="social">
-								<p class="social__text">TELEGRAM: <a href="#" class="links">@AwSaenko</a></p>
+								<p class="social__text">TELEGRAM: <a href="https://t.me/AwSaenko" class="links">@AwSaenko</a></p>
 							</div>
 							<div class="social">
-								<p class="social__text">EMAIL: <a href="#" class="links">saenkoandrew451@gmail.com</a></p>
+								<p class="social__text">EMAIL: <a href="mailto:saenkoandrew451@gmail.com" class="links">saenkoandrew451@gmail.com</a></p>
 							</div>
 							<div class="social">
 								<p class="social__text">INSTAGRAM: <a href="#" class="links">asaenko20</a></p>
 							</div>
 							<div class="social">
-								<p class="social__text">VK: <a href="#" class="links">https://vk.com/asaenko20</a></p>
+								<p class="social__text">VK: <a href="https://vk.com/asaenko20" class="links">https://vk.com/asaenko20</a></p>
 							</div>
+						</div>
+						<div class="contact__image" data-aos="fade-left">
+							<img src="../img/contact/contact-img.webp" alt="">
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
-		<footer></footer>
+		<footer>
+			<div class="footer__container">
+				<p class="footer-cop">Copyright © 2022 by Andrew Saenko</p>
+			</div>
+		</footer>
 	</div>
 	
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
