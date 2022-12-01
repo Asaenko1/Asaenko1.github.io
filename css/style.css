@@ -316,13 +316,13 @@ main{
 }
 .body__content{
     display: flex;
-    
+    justify-content: space-between;
 }
 .body__image{
     
 }
 .body__item{
-    padding-left: 230px;
+    padding-left: 20px;
 }
 
 .body__title{
@@ -597,12 +597,8 @@ footer{
     .body__content{
         padding: 0px 15px 0px 15px
     }
-    .body__item{
-        padding-left: 150px;
-    }
     .body__image img{
-        width: 400px;
-        
+        width: 400px;  
     }
     .skills__content{
         padding: 0px 15px 0px 15px;
@@ -632,7 +628,7 @@ footer{
 }     
 @media (max-width: 768px){
     .main__container{
-        padding: 170px 0px 90px 0px;
+        padding: 250px 0px 150px 0px;
     }
     .text{
         font-size: 45px
@@ -648,14 +644,11 @@ footer{
     }
     .text-first{
         width: 300px;
-        font-size: 14px;
+        font-size: 16px;
     }
     .text-second{
         width: 500px;
-        font-size: 14px;
-    }
-    .body__item{
-        padding-left: 90px;
+        font-size: 16px;
     }
     .form-button__body{
         padding-top: 30px;
@@ -721,7 +714,7 @@ footer{
         filter: blur();
      }
 }
-@media (max-width: 660px){
+@media (max-width: 680px){
     .portfolio__content{
         flex-direction:column;
         justify-content: center;
@@ -732,6 +725,20 @@ footer{
         margin-bottom: 20px;
         width: 202px;
         height: 252px;
+    }
+    .header__logo{
+        display: none;
+    }
+    .nav-item{
+        margin: 0px 0px 40px 0px;
+    }
+    .page__body{
+        background: url('../img/body/03.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .body__image{
+        display: none;
     }
     .portfolio__projects img{
         width: 200px;
@@ -857,4 +864,12 @@ footer{
     .blur{
         filter: blur();
      }
+     .text-first{
+        width: 250px;
+        font-size: 12px;
+    }
+    .text-second{
+        width: 250px;
+        font-size: 12px;
+    }
 }
